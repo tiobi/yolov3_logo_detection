@@ -25,7 +25,7 @@ Yolomark git : https://github.com/AlexeyAB/Yolo_mark
 2. Object가 있는 곳을 드래그 하면 window가 생성이 됩니다. 
 3. 키보드의 숫자키를 이용해서 object의 클래스별로 window를 생성합니다.
 4.	Window를 생성하면 이미지와 좌표를 연결한 파일이 아래처럼 생성됩니다.
-5.	
+	
 ![그림3](https://user-images.githubusercontent.com/63599116/119982147-74aa1e80-bff9-11eb-8788-3434c740de75.png)
 
 yolomark라는 프로그램을 사용하면 학습용 데이터를 용이하게 만들 수 있습니다. 준비한 학습용 이미지를 한 폴더에 저장하고 yolomark를 실행시켜서 나타나는 화면에 object의 label과 grid를 표기하면 학습용 이미지 파일의 이름과 같은 텍스트 파일이 만들어집니다. 
