@@ -1,8 +1,6 @@
-# YOLO v3를 이용한 스포츠 경기의 로고 노출 분석
+# 1. YOLO v3 소개 및 학습과정
 
-## 1. YOLO v3 소개 및 학습과정
-
-### 1. 1. Yolo 소개
+## 1. Yolo 소개
 
 YOLO: Real-Time Object Detection (pjreddie.com)
 Yolo는 기존 Object Detection 모델들의 단점을 보완한 모델이다.
@@ -16,7 +14,7 @@ Yolo 모델은 여러 사람에 의해 만들어진 다양한 Version이 있지�
 또한 Yolo는 cuDNN, Visual Studio, Configuration, Environment Variable 등 다양한 환경에서 다른 설정들이 필요하기 때문에 학습과 예측의 대략적인 과정만 나타내도록 하겠습니다.
 
 
-### 1. 2. YOLO 학습 데이터 생성
+## 2. YOLO 학습 데이터 생성
 
 Yolo는 학습을 위해 여러 가지의 파일을 생성/변경해야 합니다. 그 중 학습용 이미지 파일과 그 이미지에서 Object의 Label과 Grid를 나타내는 텍스트 파일쌍을 만들어야 합니다. 
 
@@ -39,7 +37,7 @@ yolomark라는 프로그램을 사용하면 학습용 데이터를 용이하게 
 를 나타냅니다. 한 이미지에서 여러 Object를 표기하면 여러 줄의 데이터가 생성됩니다. 
 
 
-### 1. 3. YOLO 모델 학습
+## 3. YOLO 모델 학습
 
 Yolomark로 만들어낸 학습 데이터를 yolov3.exe가 있는 폴더의 하위폴더에 저장하고 command로 yolov3.exe를 실행하면, 문제가 없는 한 다음과 같은 화면이 나오면서 학습이 시작됩니다. 
  
@@ -54,7 +52,7 @@ Yolomark로 만들어낸 학습 데이터를 yolov3.exe가 있는 폴더의 하�
 ![그림9](https://user-images.githubusercontent.com/63599116/119982151-7542b500-bff9-11eb-852a-f22cdb162ac1.png)
 
 
-### 1. 4. 학습된 가중치를 이용한 오브젝트 검출
+## 4. 학습된 가중치를 이용한 오브젝트 검출
 
 ![그림10](https://user-images.githubusercontent.com/63599116/119982153-75db4b80-bff9-11eb-9013-f205eb3858e1.png)
 
@@ -64,10 +62,4 @@ Yolov3.exe를 cmd를 이용하여 실행하고 예측할 이미지를 입력하�
 
 
 
-## 2. YOLO v3 객체탐지
-
-1에서 나온 YOLO v3를 이용한 객체 탐지 과정을 스포츠 경기에서의 로고 검출을 예로 들어 step-py-step 설명하겠습니다.
-
-
-### 2. 1. Yolomark 학습 데이터 준비
 
